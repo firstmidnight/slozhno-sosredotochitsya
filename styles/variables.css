@@ -3,9 +3,9 @@
   и их переопределение под различные устройства
 */
 :root {
-  --font-regular: 400;
-  --font-bold: 700;
-  --main_text-color: #353430;
-  --block-accent: #FF8DCB;
-
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --text-color: #000028;
+  --accent-color: #ff0070;
+  --font-size-main: 18px;
 }
