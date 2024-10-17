@@ -2,4 +2,42 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  max-width: 375px;
+  /* background-image: url(/images/cover-image-dark.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; */
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.header__theme-menu {
+  grid-area: 2 / 2 / 3 / 3;
+  gap: 13px;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  justify-self: end;
+}
+
+.header__theme-menu-button {
+  width: 70px;
+  height: 26px;
+  appearance: none;
+  border: none;
+  color: var(--accent-color);
+  text-align: center;
+  font-family: 'IBM Plex Mono';
+  font-size: var(--font-size-main);
+  font-style: normal;
+  font-weight: var(--font-weight-regular);
+  line-height: 18px; /* 100% */
+  background-color: transparent;
 }
