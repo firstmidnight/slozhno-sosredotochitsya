@@ -1,43 +1,91 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  padding: 10px;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  max-width: 375px;
-  /* background-image: url(/images/cover-image-dark.png);
+  background-image: url(/images/cover-image-dark.png);
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed; */
+  background-attachment: fixed;
 }
 
 .header {
   display: grid;
-  grid-template-columns: 1fr auto;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr;
+  grid-template-areas:
+    '. rec-text'
+    '. header__theme-menu-list'
+    'header__title header__title';
+}
+
+.rec-text {
+  position: relative;
+  left: -20px; /* Adjust this value to move the element further left */
+  grid-area: rec-text;
+  justify-self: end;
+  margin-left: 10px;
+  margin-block-end: 39px;
+  color: var(--accent-color);
+  font-family: var(--font-family-main);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-main);
+  text-transform: uppercase;
+}
+
+.rec-text::after {
+  content: '';
+  position: relative;
+  top: -16px;
+  left: 42px;
+  display: block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  padding-left: 10px;
+  box-shadow: 0 0 4px var(--accent-color);
+  background-color: var(--accent-color);
 }
 
 .header__theme-menu {
-  grid-area: 2 / 2 / 3 / 3;
-  gap: 13px;
+  grid-area: header__theme-menu-list;
 }
 
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
+  align-items: end;
   gap: 13px;
-  justify-self: end;
+  margin-block-end: 65px;
 }
 
 .header__theme-menu-button {
   width: 70px;
   height: 26px;
-  appearance: none;
   border: none;
   color: var(--accent-color);
-  text-align: center;
-  font-family: 'IBM Plex Mono';
+  font-family: var(--font-family-main), sans-serif;
+  font-weight: var(--font-weight-regular);
   font-size: var(--font-size-main);
   font-style: normal;
-  font-weight: var(--font-weight-regular);
   line-height: 18px; /* 100% */
+  text-align: center;
   background-color: transparent;
+  appearance: none;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--accent-color);
+}
+
+.header__title {
+  grid-area: header__title;
+  color: #db00ff;
+  font-family: 'IBM Plex Mono';
+  font-weight: 700;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-style: normal;
+  line-height: 82.5%; /* 95.7px */
+  text-shadow: 4px 4px 0px var(--accent-color);
 }
