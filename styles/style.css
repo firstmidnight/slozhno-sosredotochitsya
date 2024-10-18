@@ -83,7 +83,7 @@
 .decorated-zone::after {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: 30px;
   left: 0;
   width: 25px;
   height: 25px;
@@ -129,7 +129,7 @@
 }
 
 .header_subtitle {
-  align-self: start;
+  align-self: center;
   color: var(--text-color);
   font-family: var(--font-family-main), sans-serif;
   font-weight: var(--font-weight-bold);
@@ -137,6 +137,7 @@
   font-style: normal;
   line-height: 23.4px; /* 130% */
   max-block-size: 117px;
+  /* margin-top: 55px; */
 
 }
 
@@ -166,8 +167,8 @@
 .section-text {
   margin-top: 10px;
   color: #f1b2ce;
-  font-family: 'IBM Plex Mono';
-  font-weight: 400;
+  font-family: var(--font-family-main), sans-serif;
+  font-weight: var(--font-weight-regular);
   font-size: 18px;
   font-style: normal;
   line-height: 23.4px; /* 130% */
