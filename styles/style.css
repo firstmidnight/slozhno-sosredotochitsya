@@ -2,6 +2,12 @@
 
 /* TODO: перевести всё в логические выражения, поправить отступ у rec */
 
+body {
+  margin: 0;
+}
+
+
+
 .page {
   max-width: 375px;
   margin: 0 auto;
@@ -16,10 +22,8 @@
 
 .header {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  justify-items: center;
-  align-items: center;
-  height: 100vh;
+  grid-template-rows: 1fr min-content 1fr;
+  padding: 10px;
 }
 
 .header__title {
@@ -32,7 +36,8 @@
 }
 
 .header__theme-menu-list {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 10px;
 }
 
@@ -66,30 +71,33 @@
 }
 
 .decorated-zone {
+  block-size: 100vh;
+  min-block-size: 668px;
   position: relative;
 }
 
 .decorated-zone::before {
-  content: "";
+  content: '';
+  block-size: 25px;
+  inline-size: 25px;
   position: absolute;
-  inset-block-start: 10px;
-  inset-inline-end: 10px;
-  width: 25px;
-  height: 25px;
+  top: 10px;
+  right: 10px;
   border-top: 1px solid var(--accent-color);
   border-right: 1px solid var(--accent-color);
 }
 
 .decorated-zone::after {
-  content: "";
-  position: absolute;
-  inset-block-end: 10px;
-  inset-inline-start: 10px;
-  width: 25px;
-  height: 25px;
+  content: '';
+  block-size: 25px;
+  inline-size: 25px;
   border-bottom: 1px solid var(--accent-color);
   border-left: 1px solid var(--accent-color);
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
 }
+
 
 .rec-text::before {
   content: 'REC';
@@ -137,7 +145,6 @@
   font-style: normal;
   line-height: 23.4px; /* 130% */
   max-block-size: 117px;
-  /* margin-top: 55px; */
 
 }
 
