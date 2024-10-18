@@ -3,15 +3,15 @@
 /* TODO: перевести всё в логические выражения, поправить отступ у rec */
 
 .page {
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 10px;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-image: url(/images/cover-image-dark.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  padding: 10px;
-  max-width: 375px;
-  margin: 0 auto;
 }
 
 .header {
@@ -23,6 +23,7 @@
     '. header__theme-menu-list'
     'header__title header__title'
     'header_subtitle-block header_subtitle-block';
+  height: 100vh;
   margin-bottom: 40px;
 }
 
@@ -131,21 +132,21 @@
 }
 
 .heading {
+  padding-top: 40px;
   color: var(--accent-color);
   font-family: var(--font-family-main), sans-serif;
+  font-weight: 700;
   font-size: 18px;
   font-style: normal;
-  font-weight: 700;
   line-height: 23.4px; /* 130% */
-  padding-top: 40px;
 }
 
 .header_subtitle {
   color: var(--text-color);
   font-family: var(--font-family-main), sans-serif;
+  font-weight: var(--font-weight-bold);
   font-size: var(--font-size-main);
   font-style: normal;
-  font-weight: var(--font-weight-bold);
   line-height: 23.4px; /* 130% */
 }
 
@@ -164,22 +165,22 @@
 }
 
 .article-sub_heading {
+  margin-top: 20px;
   color: var(--text-color);
   font-family: var(--font-family-main), sans-serif;
-  font-size: var(--font-size-main);
   font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-main);
   line-height: 23.4px; /* 130% */
-  margin-top: 20px;
 }
 
 .section-text {
+  margin-top: 10px;
   color: #f1b2ce;
   font-family: 'IBM Plex Mono';
+  font-weight: 400;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
   line-height: 23.4px; /* 130% */
-  margin-top: 10px;
 }
 
 .pictures__container {
@@ -193,9 +194,9 @@
 }
 
 .gallery-image {
-  inline-size: 100%;
   object-fit: cover;
   object-position: center;
+  inline-size: 100%;
 }
 
 .footer {
