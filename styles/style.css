@@ -36,7 +36,7 @@ body {
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 13px;
   align-items: flex-end;
 }
 
