@@ -10,7 +10,6 @@ body {
 
 .page {
   max-width: 375px;
-  margin: 0 auto;
   padding: 10px;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-image: url(/images/cover-image-dark.png);
