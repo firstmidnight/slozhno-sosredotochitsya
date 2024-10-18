@@ -13,19 +13,19 @@
 .header {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr min-content;
   grid-template-areas:
     '. rec-text'
     '. header__theme-menu-list'
-    'header__title header__title';
+    'header__title header__title'
+    'header_subtitle-block header_subtitle-block';
 }
 
 .rec-text {
   position: relative;
-  left: -20px; /* Adjust this value to move the element further left */
+  left: -20px;
   grid-area: rec-text;
   justify-self: end;
-  margin-left: 10px;
   margin-block-end: 39px;
   color: var(--accent-color);
   font-family: var(--font-family-main);
@@ -36,16 +36,14 @@
 
 .rec-text::after {
   content: '';
-  position: relative;
-  top: -16px;
-  left: 42px;
-  display: block;
-  width: 9px;
-  height: 9px;
+  position: absolute;
+  top: 8px;
+  left: 100%;
   border-radius: 50%;
-  padding-left: 10px;
-  box-shadow: 0 0 4px var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--accent-color);
   background-color: var(--accent-color);
+  inline-size: 10px;
+  block-size: 10px;
 }
 
 .header__theme-menu {
@@ -81,11 +79,51 @@
 
 .header__title {
   grid-area: header__title;
-  color: #db00ff;
+  color: var(--title-accent);
   font-family: 'IBM Plex Mono';
   font-weight: 700;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-style: normal;
   line-height: 82.5%; /* 95.7px */
   text-shadow: 4px 4px 0px var(--accent-color);
+  margin-bottom: 55px;
+}
+
+.decorated-zone::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+}
+
+.decorated-zone::after {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+}
+
+.header_subtitle-block {
+  grid-area: header_subtitle-block;
+}
+
+.title-decor {
+  background: var(--accent-color);
+}
+
+.header_subtitle {
+  color: #000028;
+  font-family: 'IBM Plex Mono';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: var(--font-weight-bold);
+  line-height: 23.4px; /* 130% */
 }
