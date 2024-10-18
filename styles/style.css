@@ -81,14 +81,15 @@
 .header__title {
   grid-area: header__title;
   color: var(--title-accent);
-  font-family: 'IBM Plex Mono';
-  font-weight: 700;
+  font-family: var(--font-family-main), sans-serif;
+  font-weight: var(--font-weight-bold);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-style: normal;
   line-height: 82.5%; /* 95.7px */
-  text-shadow: 4px 4px 0px var(--accent-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
   margin-bottom: 55px;
 }
+
 .decorated-zone {
   position: relative;
 }
@@ -126,17 +127,17 @@
 }
 
 .header_subtitle {
-  color: #000028;
-  font-family: 'IBM Plex Mono';
-  font-size: 18px;
+  color: var(--text-color);
+  font-family: var(--font-family-main), sans-serif;
+  font-size: var(--font-size-main);
   font-style: normal;
   font-weight: var(--font-weight-bold);
   line-height: 23.4px; /* 130% */
 }
 
 .heading {
-  color: #FF0070;
-  font-family: "IBM Plex Mono";
+  color: var(--accent-color);
+  font-family: var(--font-family-main), sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
