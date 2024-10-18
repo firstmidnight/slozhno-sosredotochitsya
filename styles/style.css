@@ -70,10 +70,10 @@
 }
 
 .decorated-zone::before {
-  content: '';
+  content: "";
   position: absolute;
-  top: 0;
-  right: 0;
+  inset-block-start: 10px;
+  inset-inline-end: 10px;
   width: 25px;
   height: 25px;
   border-top: 1px solid var(--accent-color);
@@ -81,10 +81,10 @@
 }
 
 .decorated-zone::after {
-  content: '';
+  content: "";
   position: absolute;
-  bottom: 30px;
-  left: 0;
+  inset-block-end: 10px;
+  inset-inline-start: 10px;
   width: 25px;
   height: 25px;
   border-bottom: 1px solid var(--accent-color);
