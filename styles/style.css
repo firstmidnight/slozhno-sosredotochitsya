@@ -81,8 +81,8 @@ body {
   block-size: 25px;
   inline-size: 25px;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 0;
+  right: 0px;
   border-top: 1px solid var(--accent-color);
   border-right: 1px solid var(--accent-color);
 }
@@ -94,8 +94,8 @@ body {
   border-bottom: 1px solid var(--accent-color);
   border-left: 1px solid var(--accent-color);
   position: absolute;
-  bottom: 10px;
-  left: 10px;
+  bottom: 0;
+  left: 0;
 }
 
 
