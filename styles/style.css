@@ -16,9 +16,8 @@
 
 .header {
   display: grid;
-  min-block-size: 100vh;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto 1fr 1fr min-content;
+  grid-template-columns: repeat(2,min-content) ;
+  grid-template-rows: min-content 1fr 1fr 1fr; 
   grid-template-areas:
     '. rec-text'
     '. header__theme-menu-list'
@@ -58,9 +57,7 @@
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  align-items: end;
   gap: 10px;
-  margin-block-end: 65px;
 }
 
 .header__theme-menu-button {
@@ -85,7 +82,6 @@
 .header__title {
   grid-area: header__title;
   text-shadow: 4px 4px 0 var(--accent-color);
-  margin-bottom: 55px;
 }
 
 .heading-decor {
@@ -127,7 +123,9 @@
 
 .header_subtitle-block {
   grid-area: header_subtitle-block;
-  margin-bottom: 106px;
+  align-self: center;
+  margin-bottom: 30px;
+
 }
 
 .title-decor {
