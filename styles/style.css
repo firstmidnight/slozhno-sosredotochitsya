@@ -1,5 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+/* TODO: перевести всё в логические выражения, поправить отступ у rec */
+
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-image: url(/images/cover-image-dark.png);
@@ -8,6 +10,8 @@
   background-size: cover;
   background-attachment: fixed;
   padding: 10px;
+  max-width: 375px;
+  margin: 0 auto;
 }
 
 .header {
@@ -80,6 +84,11 @@
 
 .header__title {
   grid-area: header__title;
+  text-shadow: 4px 4px 0 var(--accent-color);
+  margin-bottom: 55px;
+}
+
+.heading-decor {
   color: var(--title-accent);
   font-family: var(--font-family-main), sans-serif;
   font-weight: var(--font-weight-bold);
@@ -87,7 +96,6 @@
   font-style: normal;
   line-height: 82.5%; /* 95.7px */
   text-shadow: 4px 4px 0 var(--accent-color);
-  margin-bottom: 55px;
 }
 
 .decorated-zone {
@@ -114,7 +122,7 @@
   height: 25px;
   border-bottom: 1px solid var(--accent-color);
   border-left: 1px solid var(--accent-color);
-  /* margin-bottom: 40px; */
+  
 }
 
 .header_subtitle-block {
@@ -176,4 +184,31 @@
   font-weight: 400;
   line-height: 23.4px; /* 130% */
   margin-top: 10px;
+}
+
+.pictures__container {
+  margin-bottom: 40px;
+}
+
+.gallery {
+  display: grid;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.gallery-image {
+  inline-size: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.footer {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+.footer-title {
+  color: var(--title-accent);
+  text-shadow: 2px 2px 0px var(--accent-color);
 }
