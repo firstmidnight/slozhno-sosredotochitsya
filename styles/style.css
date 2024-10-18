@@ -16,13 +16,14 @@
 
 .header {
   display: grid;
-  grid-template-columns: repeat(2,min-content) ;
-  grid-template-rows: min-content 1fr 1fr 1fr; 
+  grid-template-columns: repeat(2, min-content);
+  grid-template-rows: min-content 1fr 1fr 1fr;
   grid-template-areas:
     '. rec-text'
     '. header__theme-menu-list'
     'header__title header__title'
     'header_subtitle-block header_subtitle-block';
+  margin-bottom: 40px;
 }
 
 .rec-text {
@@ -42,7 +43,7 @@
   content: '';
   position: absolute;
   top: 8px;
-  left: 100%;
+  left: 90%;
   border-radius: 50%;
   box-shadow: 0 0 4px 2px var(--accent-color);
   background-color: var(--accent-color);
@@ -112,20 +113,17 @@
 .decorated-zone::after {
   content: '';
   position: absolute;
-  bottom: 10px;
+  bottom: -30px;
   left: 0;
   width: 25px;
   height: 25px;
   border-bottom: 1px solid var(--accent-color);
   border-left: 1px solid var(--accent-color);
-  
 }
 
 .header_subtitle-block {
   grid-area: header_subtitle-block;
-  align-self: center;
-  margin-bottom: 30px;
-
+  padding-top: 55px;
 }
 
 .title-decor {
@@ -139,7 +137,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 23.4px; /* 130% */
-  margin-top: 50px;
+  padding-top: 40px;
 }
 
 .header_subtitle {
