@@ -16,12 +16,10 @@
 
 .header {
   display: grid;
-  grid-template-rows: repeat(auto, min-content);
-  justify-items: end;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
   align-items: center;
   height: 100vh;
- 
-
 }
 
 .header__title {
@@ -31,97 +29,90 @@
 .header__theme-menu {
   justify-self: end;
   align-self: center;
-  }
-  
-  .header__theme-menu-list {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .header__theme-menu-button {
-    width: 70px;
-    height: 26px;
-    border: none;
-    color: var(--accent-color);
-    font-family: var(--font-family-main), sans-serif;
-    font-weight: var(--font-weight-regular);
-    font-size: var(--font-size-main);
-    font-style: normal;
-    line-height: 18px; /* 100% */
-    text-align: center;
-    background-color: transparent;
-    appearance: none;
-  }
-  
-  .header__theme-menu-button_active {
-    border: 1px solid var(--accent-color);
-  }
-  
+}
 
-  
-  .heading-decor {
-    color: var(--title-accent);
-    font-family: var(--font-family-main), sans-serif;
-    font-weight: var(--font-weight-bold);
-    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    font-style: normal;
-    line-height: 82.5%; /* 95.7px */
-    text-shadow: 4px 4px 0 var(--accent-color);
-  }
-  
-  .decorated-zone {
-    position: relative;
-  }
-  
-  .decorated-zone::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 25px;
-    height: 25px;
-    border-top: 1px solid var(--accent-color);
-    border-right: 1px solid var(--accent-color);
-  }
-  
-  .decorated-zone::after {
-    content: '';
-    position: absolute;
-    bottom: -30px;
-    left: 0;
-    width: 25px;
-    height: 25px;
-    border-bottom: 1px solid var(--accent-color);
-    border-left: 1px solid var(--accent-color);
-  }
-  
+.header__theme-menu-list {
+  display: grid;
+  gap: 10px;
+}
 
-.rec-text {
+.header__theme-menu-button {
+  width: 70px;
+  height: 26px;
+  border: none;
+  color: var(--accent-color);
+  font-family: var(--font-family-main), sans-serif;
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-main);
+  font-style: normal;
+  line-height: 18px; /* 100% */
+  text-align: center;
+  background-color: transparent;
+  appearance: none;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--accent-color);
+}
+
+.heading-decor {
+  color: var(--title-accent);
+  font-family: var(--font-family-main), sans-serif;
+  font-weight: var(--font-weight-bold);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-style: normal;
+  line-height: 82.5%; /* 95.7px */
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+.decorated-zone {
+  position: relative;
+}
+
+.decorated-zone::before {
+  content: '';
   position: absolute;
-  right: 20px;
   top: 0;
-  /* margin-block-end: 39px; */
+  right: 0;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+}
+
+.decorated-zone::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+}
+
+.rec-text::before {
+  content: 'REC';
+  position: absolute;
   color: var(--accent-color);
   font-family: var(--font-family-main);
   font-weight: var(--font-weight-regular);
   font-size: var(--font-size-main);
-  text-transform: uppercase;
+  inset-block-start: 10px;
+  inset-inline-end: 38px;
 }
 
 .rec-text::after {
   content: '';
   position: absolute;
-  top: 8px;
-  left: 90%;
   border-radius: 50%;
   box-shadow: 0 0 4px 2px var(--accent-color);
   background-color: var(--accent-color);
-  inline-size: 10px;
-  block-size: 10px;
+  inset-block-start: 18px;
+  inset-inline-end: 19px;
+  inline-size: 9px;
+  block-size: 9px;
 }
-
-
 
 .title-decor {
   background: var(--accent-color);
@@ -137,16 +128,15 @@
   line-height: 23.4px; /* 130% */
 }
 
-
-
 .header_subtitle {
+  align-self: start;
   color: var(--text-color);
   font-family: var(--font-family-main), sans-serif;
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-main);
   font-style: normal;
   line-height: 23.4px; /* 130% */
-  justify-self: start;
+  max-block-size: 117px;
 
 }
 
