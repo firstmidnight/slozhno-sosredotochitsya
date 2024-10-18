@@ -30,14 +30,14 @@ body {
 }
 
 .header__theme-menu {
-  justify-self: end;
-  align-self: center;
+  margin: 75px 10px 0 0;
 }
 
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  align-items: flex-end;
 }
 
 .header__theme-menu-button {
