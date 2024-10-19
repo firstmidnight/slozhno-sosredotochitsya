@@ -5,9 +5,8 @@
 
 .page {
   max-width: 375px;
-
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  background-image: url(../images/cover-image-dark.png);
+  background-image: url(/images/cover-image-dark.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -17,7 +16,6 @@
 .header {
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
-  /* padding: 10px; */
 }
 
 .header__title {
@@ -25,7 +23,7 @@
 }
 
 .header__theme-menu {
-  margin-top: 40px;
+  margin-top: 41px;
 }
 
 .header__theme-menu-list {
