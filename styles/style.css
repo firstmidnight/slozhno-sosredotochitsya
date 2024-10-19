@@ -139,9 +139,9 @@
   background-color: transparent;
 }
 
-.heading:first-of-type{
+/* .heading:first-of-type{
   margin-block-start: 40px;
-}
+} */
 
 .main {
   display: flex;
