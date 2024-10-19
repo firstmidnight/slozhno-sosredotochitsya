@@ -67,6 +67,7 @@
 .decorated-zone {
   position: relative;
   block-size: 100vh;
+  margin-bottom: 50px;
 }
 
 .decorated-zone::before {
@@ -78,6 +79,7 @@
   inline-size: 25px;
   inset-block-start: 10px;
   inset-inline-end: 10px;
+  
 }
 
 .decorated-zone::after {
