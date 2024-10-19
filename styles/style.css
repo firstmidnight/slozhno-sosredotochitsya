@@ -22,6 +22,7 @@
 
 .header__title {
   text-shadow: 4px 4px 0 var(--accent-color);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 }
 
 .header__theme-menu {
@@ -142,4 +143,43 @@
   font-size: var(--font-size-main);
   line-height: 130%;
   color: var(--accent-color);
+}
+
+.main {
+  inline-size: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 10px;
+}
+
+.section-block {
+  inline-size: 100%;
+  display: grid;
+  gap: 20px;
+}
+
+
+.article-heading {
+ 
+}
+
+.article-sub_heading {
+  font-weight: var(--font-weight-regular);
+}
+
+.article-sub_heading:first-of-type {
+  margin-top: 20px;
+}
+
+.section-content {
+  padding-block-start: 10px;
+  font-family: var(--font-family-main);
+  font-size: var(--font-size-main);
+  margin-block-start: 0;
+  margin-block-end: 0;
+  /* text-align: left; */
+  font-size: var(--font-size-main, monospace, sans-serif);
+  font-weight: var(--font-weight-regular);
+  line-height: 23.4px;
 }
