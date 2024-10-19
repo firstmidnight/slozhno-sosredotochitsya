@@ -67,6 +67,10 @@
 .decorated-zone {
   position: relative;
   block-size: 100vh;
+  
+}
+
+.decorated-zone:not(.footer) {
   margin-bottom: 50px;
 }
 
