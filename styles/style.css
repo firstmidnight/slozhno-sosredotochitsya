@@ -191,7 +191,6 @@ color: var(--text-accent);
 }
 
 
-
 .pictures__container {
   display: grid;
   inline-size: 100%;
@@ -209,7 +208,7 @@ color: var(--text-accent);
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-block-start: 40px;
+  margin-block-start: 30px;
   font-size: var(--font-size-main);
   inline-size: 100%;
   min-block-size: 668px;
