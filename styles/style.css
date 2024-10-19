@@ -137,6 +137,7 @@
   font-size: var(--font-size-main);
   line-height: 130%;
   background-color: transparent;
+  margin-block-start: 20px;
 }
 
 /* .heading:first-of-type{
@@ -168,6 +169,10 @@
 .article-sub_heading {
   margin-block-end: 10px;
   font-weight: var(--font-weight-regular);
+}
+
+.section-text {
+color: var(--text-accent);
 }
 
 .article-sub_heading:first-of-type {
