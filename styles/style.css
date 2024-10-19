@@ -114,9 +114,6 @@
   block-size: 9px;
 }
 
-.title-decor {
-  background: var(--accent-color);
-}
 
 .header_subtitle {
   justify-self: end;
@@ -175,8 +172,7 @@
   padding-block-start: 10px;
   font-family: var(--font-family-main);
   font-weight: var(--font-weight-regular);
-  font-size: var(--font-size-main);
-  font-size: var(--font-size-main, monospace, sans-serif);
+  font-size: var(--font-size-main, sans-serif);
   line-height: 23.4px;
 }
 
