@@ -4,7 +4,7 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  background-image: url("../images/cover-image-dark.png");
+  background-image: url('../images/cover-image-dark.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -186,7 +186,7 @@ color: var(--text-accent);
 }
 
 .gallery-heading {
-  margin-block-start: 28px;
+  margin-block-start: 25px;
 
 }
 
