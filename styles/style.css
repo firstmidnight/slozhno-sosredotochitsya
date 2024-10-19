@@ -208,12 +208,13 @@ color: var(--text-accent);
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-block-start: 30px; */
+  margin-block-start: 30px;
   font-size: var(--font-size-main);
   inline-size: 100%;
   min-block-size: 668px;
   height: 100vh;
 }
+
 
 .footer-title {
   text-shadow: 2px 2px var(--accent-color);
