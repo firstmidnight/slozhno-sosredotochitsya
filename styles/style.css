@@ -4,7 +4,6 @@
 
 
 .page {
-  max-width: 375px;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-image: url(../images/cover-image-dark.png);
   background-repeat: no-repeat;
@@ -16,15 +15,15 @@
 .header {
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
+  height: 100vh;
+  min-height: 668px;
+  padding: 10px;
 }
 
 .header__title {
   text-shadow: 4px 4px 0 var(--accent-color);
 }
 
-/* .header__theme-menu {
-  margin-top: 41px;
-} */
 
 .header__theme-menu-list {
   display: flex;
@@ -73,8 +72,8 @@
   block-size: 25px;
   inline-size: 25px;
   position: absolute;
-  top: 0;
-  right: 0;
+  inset-block-start: 10px;
+  inset-inline-end: 10px;
   border-top: 1px solid var(--accent-color);
   border-right: 1px solid var(--accent-color);
 }
@@ -86,8 +85,8 @@
   border-bottom: 1px solid var(--accent-color);
   border-left: 1px solid var(--accent-color);
   position: absolute;
-  bottom: 0;
-  left: 0;
+  inset-block-end: 10px;
+  inset-inline-start: 10px;
 }
 
 
