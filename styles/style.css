@@ -2,17 +2,12 @@
 
 /* TODO: перевести всё в логические выражения */
 
-body {
-  margin: 0;
-}
-
-
 
 .page {
   max-width: 375px;
-  padding: 10px;
+
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  background-image: url(/images/cover-image-dark.png);
+  background-image: url(../images/cover-image-dark.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
