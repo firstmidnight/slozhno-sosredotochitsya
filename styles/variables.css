@@ -12,5 +12,5 @@
   --text-accent: #F1B2CE;
   --font-size-main: 18px;
   --font-family-main: 'IBM Plex Mono', sans-serif;
-  --bg-img: url('../images/cover-image-dark.png');
+  --bg-img: url(../images/cover-image-dark.png);
 }
