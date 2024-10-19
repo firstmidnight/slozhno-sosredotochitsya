@@ -4,7 +4,7 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  background-image: var(--bg-img);
+  background-image: url("../images/cover-image-dark.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -14,9 +14,9 @@
 .header {
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
-  height: 100vh;
+  /* height: 100vh; */
   padding: 10px;
-  min-block-size: 668px;
+  /* min-block-size: 668px; */
 }
 
 .header__title {
@@ -198,8 +198,9 @@
   align-items: center;
   margin-block-start: 30px;
   font-size: var(--font-size-main);
-  inline-size: 100%;
+  /* inline-size: 100%;
   min-block-size: 668px;
+  height: 100vh; */
 }
 
 .footer-title {
