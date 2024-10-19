@@ -185,6 +185,11 @@ color: var(--text-accent);
   line-height: 23.4px;
 }
 
+.gallery-heading {
+  margin-block-start: 28px;
+
+}
+
 .pictures__container {
   display: grid;
   inline-size: 100%;
