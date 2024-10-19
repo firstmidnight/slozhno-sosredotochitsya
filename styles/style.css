@@ -71,7 +71,7 @@
 }
 
 .decorated-zone:not(.footer) {
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .decorated-zone::before {
