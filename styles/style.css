@@ -170,10 +170,10 @@
 .section-text {
 color: var(--text-accent);
 }
-
+/* 
 .article-sub_heading:first-of-type {
   margin-block-start: 20px;
-}
+} */
 
 .section-content {
   margin-block-start: 0;
