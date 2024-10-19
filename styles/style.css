@@ -2,7 +2,6 @@
 
 /* TODO: перевести всё в логические выражения */
 
-
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-image: var(--bg-img);
@@ -92,7 +91,6 @@
   inset-inline-start: 10px;
 }
 
-
 .rec-text::before {
   content: 'REC';
   position: absolute;
@@ -167,7 +165,7 @@
   font-weight: var(--font-weight-regular);
 }
 
-.article-sub_heading:first-of-type{
+.article-sub_heading:first-of-type {
   margin-block-start: 20px;
 }
 
@@ -194,15 +192,15 @@
 }
 
 .footer {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-block-start: 30px;
-    font-size: var(--font-size-main);
-    inline-size: 100%;
-    min-block-size: 668px;
-    block-size: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block-start: 30px;
+  font-size: var(--font-size-main);
+  inline-size: 100%;
+  min-block-size: 668px;
+  block-size: 100vh;
 }
 
 .footer-title {
