@@ -195,6 +195,7 @@ color: var(--text-accent);
 .pictures__container {
   display: grid;
   inline-size: 100%;
+  gap: 10px;
 }
 
 .gallery-image {
