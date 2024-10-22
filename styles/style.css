@@ -228,7 +228,7 @@
 .pictures__container {
   display: grid;
   inline-size: 100%;
-  gap: 5px;
+  gap: 10px;
 }
 
 .gallery-image {
@@ -261,9 +261,9 @@
     gap: 80px;
   }
 
-  .header {
+  /* .header {
     padding: 20px 20px 0 0;
-  }
+  } */
 
   .header_subtitle {
     inline-size: 364px;
@@ -275,9 +275,9 @@
     grid-template-rows: auto;
   }
 
-  .section_why .heading {
+  /* .section_why .heading {
     grid-column: 1;
-  }
+  } */
 
   .section_why .section-content {
     display: grid;
