@@ -265,6 +265,11 @@
     padding: 20px 20px 0 0;
   } */
 
+
+.decorated-zone:not(.footer) {
+  margin-bottom: 40px;
+}
+
   .header_subtitle {
     inline-size: 364px;
   }
