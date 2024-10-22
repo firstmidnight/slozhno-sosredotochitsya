@@ -2,11 +2,12 @@
 
 /* TODO: перевести всё в логические выражения */
 
+/* Mobile first */
+
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-image: var(--bg-img);
   background-color: var(--main-color);
-  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -39,7 +40,7 @@
 .header__theme-menu-button {
   border: none;
   color: var(--accent-color);
-  font-family: var(--font-family-main), sans-serif;
+  font-family: var(--font-family-main);
   font-weight: var(--font-weight-regular);
   font-size: var(--font-size-main);
   font-style: normal;
@@ -58,7 +59,7 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid rgb(255 0 112 / 0.40);
+  border: 1px solid rgb(255 0 112 / 0.4);
   cursor: pointer;
 }
 
@@ -67,20 +68,18 @@
 }
 
 .header__theme-menu-button:focus-visible::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 1px;
-  background-color: var(--accent-color); 
-
+  background-color: var(--accent-color);
 }
-
 
 .heading-decor {
   color: var(--title-accent);
-  font-family: var(--font-family-main), sans-serif;
+  font-family: var(--font-family-main);
   font-weight: var(--font-weight-bold);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-style: normal;
@@ -91,7 +90,6 @@
 .decorated-zone {
   position: relative;
   block-size: 100vh;
-  
 }
 
 .decorated-zone:not(.footer) {
@@ -107,7 +105,6 @@
   inline-size: 25px;
   inset-block-start: 10px;
   inset-inline-end: 10px;
-  
 }
 
 .decorated-zone::after {
@@ -144,7 +141,6 @@
   block-size: 9px;
 }
 
-
 .header_subtitle {
   justify-self: end;
   align-self: center;
@@ -153,7 +149,7 @@
 
 .title-decor {
   color: var(--main-color);
-  font-family: var(--font-family-main), sans-serif;
+  font-family: var(--font-family-main);
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-main);
   line-height: 130%;
@@ -162,7 +158,7 @@
 
 .heading {
   color: var(--accent-color);
-  font-family: var(--font-family-main), sans-serif;
+  font-family: var(--font-family-main);
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-main);
   line-height: 130%;
@@ -197,7 +193,7 @@
 }
 
 .section-text {
-color: var(--text-accent);
+  color: var(--text-accent);
 }
 
 .accent-link {
@@ -229,7 +225,6 @@ color: var(--text-accent);
   line-height: 23.4px;
 }
 
-
 .pictures__container {
   display: grid;
   inline-size: 100%;
@@ -254,7 +249,106 @@ color: var(--text-accent);
   height: 100vh;
 }
 
-
 .footer-title {
   text-shadow: 2px 2px var(--accent-color);
 }
+
+/* Tablet */
+
+@media (768px <= width <= 1024px) {
+ 
+  .main {
+    gap: 80px;
+  }
+
+  .header {
+    padding: 0 20px 0 0;
+  }
+
+  .header_subtitle {
+    inline-size: 364px;
+  }
+
+  .section_why {
+    display: grid;
+    grid-template-columns: 236px 1fr;
+    grid-template-rows: auto;
+  }
+
+  .section_why .heading {
+    grid-column: 1;
+  }
+
+  .section_why .section-content {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-column: 2;
+  }
+
+  .section_what .heading {
+    max-width: 236px;
+  }
+
+  .section_how {
+    display: grid;
+    grid-template-columns: 236px 1fr;
+    grid-template-rows: auto;
+  }
+
+  .section_how .heading {
+    grid-column: 1;
+  }
+
+  .section_how .section-content {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-column: 2;
+  }
+
+  .section_what .section-content {
+    display: grid;
+    grid-template-rows: auto auto;
+  }
+
+  .pictures__container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    inline-size: 100%;
+  }
+
+  .gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .img_sunset {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .img_ice-cream {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+  }
+
+  .img_tape {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+  }
+
+  .img_books {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .img_street {
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+  }
+}
+
+/* TODO: почистить повторяющиеся стили */
