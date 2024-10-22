@@ -6,11 +6,11 @@
 :root {
   --font-weight-regular: 400;
   --font-weight-bold: 700;
-  --text-color: #000028;
+  --main-color: #000028;
   --accent-color: #ff0070;
   --title-accent: #db00ff;
   --text-accent: #F1B2CE;
   --font-size-main: 18px;
-  --font-family-main: 'IBM Plex Mono', sans-serif;
+  --font-family-main: 'IBM Plex Mono', monospace;
   --bg-img: url(../images/cover-image-dark.png);
 }

@@ -5,6 +5,7 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-image: var(--bg-img);
+  background-color: var(--main-color);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -48,11 +49,34 @@
   inline-size: 70px;
   block-size: 26px;
   appearance: none;
+  position: relative;
 }
 
 .header__theme-menu-button_active {
   border: 1px solid var(--accent-color);
+  pointer-events: none;
 }
+
+.header__theme-menu-button:hover {
+  border: 1px solid rgb(255 0 112 / 0.40);
+  cursor: pointer;
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--accent-color); 
+
+}
+
 
 .heading-decor {
   color: var(--title-accent);
@@ -128,7 +152,7 @@
 }
 
 .title-decor {
-  color: var(--text-color);
+  color: var(--main-color);
   font-family: var(--font-family-main), sans-serif;
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-main);
@@ -143,7 +167,6 @@
   font-size: var(--font-size-main);
   line-height: 130%;
   background-color: transparent;
-  /* margin-block-start: 25px; */
 }
 
 .main {
@@ -176,10 +199,26 @@
 .section-text {
 color: var(--text-accent);
 }
-/* 
-.article-sub_heading:first-of-type {
-  margin-block-start: 20px;
-} */
+
+.accent-link {
+  text-decoration: none;
+}
+
+.accent-link:hover {
+  border-bottom: 1px solid currentColor;
+}
+
+.accent-link:focus {
+  outline: none;
+}
+
+.accent-link:focus-visible {
+  outline: 1px solid var(--text-accent);
+}
+
+.shadow-accent {
+  text-shadow: 2px 2px var(--accent-color);
+}
 
 .section-content {
   margin-block-start: 0;
