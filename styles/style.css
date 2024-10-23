@@ -258,6 +258,7 @@
 /* Tablet */
 
 @media (min-width: 768px) {
+  
   .main {
     gap: 80px;
     padding: 20px;
