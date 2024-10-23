@@ -311,6 +311,10 @@
     grid-template-rows: auto auto;
   }
 
+  .gallery-heading {
+    margin-block-end: 20px;
+  }
+
   .pictures__container {
     display: grid;
     gap: 20px;
