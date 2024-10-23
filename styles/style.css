@@ -7,8 +7,8 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   margin: 0 auto;
-  background-image: var(--bg-img);
   background-color: var(--main-color);
+  background-image: var(--bg-img);
   background-position: top center;
   background-size: cover;
   background-attachment: fixed;
@@ -39,6 +39,7 @@
 }
 
 .header__theme-menu-button {
+  position: relative;
   border: none;
   color: var(--accent-color);
   font-family: var(--font-family-main);
@@ -51,7 +52,6 @@
   inline-size: 70px;
   block-size: 26px;
   appearance: none;
-  position: relative;
 }
 
 .header__theme-menu-button_active {
@@ -228,8 +228,8 @@
 
 .pictures__container {
   display: grid;
-  inline-size: 100%;
   gap: 10px;
+  inline-size: 100%;
 }
 
 .gallery-image {
@@ -243,12 +243,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
   margin-block-start: 30px;
+  padding: 10px;
   font-size: var(--font-size-main);
   inline-size: 100%;
   min-block-size: 668px;
-  height: 100vh;
-  padding: 10px;
 }
 
 .footer-title {
@@ -257,8 +257,7 @@
 
 /* Tablet */
 
-@media (768px <= width <= 1024px) {
-  
+@media (min-width: 768px) {
   .main {
     gap: 80px;
     padding: 20px;
@@ -297,10 +296,10 @@
     grid-template-columns: 236px 1fr;
     grid-template-rows: auto;
   }
-
+  /* 
   .section_how .heading {
     grid-column: 1;
-  }
+  } */
 
   .section_how .section-content {
     display: grid;
@@ -319,9 +318,9 @@
 
   .pictures__container {
     display: grid;
-    gap: 20px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, auto);
+    gap: 20px;
     inline-size: 100%;
   }
 
@@ -356,12 +355,12 @@
     grid-column: 2 / 4;
     grid-row: 3 / 4;
   }
-   
+
   .decorated-zone::before {
     inset-block-start: 20px;
     inset-inline-end: 20px;
   }
-  
+
   .decorated-zone::after {
     inset-block-end: 20px;
     inset-inline-start: 20px;
@@ -371,7 +370,7 @@
     inset-block-start: 22px;
     inset-inline-end: 45px;
   }
-  
+
   .rec-text::after {
     inset-inline-end: 30px;
     inset-block-start: 30px;
@@ -379,6 +378,44 @@
 
   .footer {
     padding: 20px;
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 1024px) {
+  
+  .header__theme-menu {
+    justify-self: center;
+    align-self: flex-start;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: row;
+  }
+
+  .header_subtitle {
+    inline-size: 491px;
+  }
+
+  .section_why {
+    grid-template-columns: 315px 1fr;
+    grid-template-rows: auto;
+  }
+
+  .section_what {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: start;
+  }
+
+  .section_what .heading {
+    grid-column: 1 / -1;
+    max-width: none;
+  }
+
+  .section_how {
+    grid-template-columns: 315px 1fr;
   }
 }
 
