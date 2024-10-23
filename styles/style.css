@@ -84,7 +84,7 @@
   font-weight: var(--font-weight-bold);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-style: normal;
-  line-height: 82.5%; /* 95.7px */
+  line-height: 82.5%;
 }
 
 .decorated-zone {
@@ -142,6 +142,7 @@
 }
 
 .header_subtitle {
+  font-weight: var(--font-weight-bold);
   justify-self: end;
   align-self: center;
   text-align: left;
@@ -150,7 +151,6 @@
 .title-decor {
   color: var(--main-color);
   font-family: var(--font-family-main);
-  font-weight: var(--font-weight-bold);
   font-size: var(--font-size-main);
   line-height: 130%;
   background-color: var(--accent-color);
@@ -185,6 +185,7 @@
 
 .article-heading__advice {
   margin-bottom: 20px;
+  font-weight: var(--font-weight-bold);
 }
 
 .article-sub_heading {
@@ -422,9 +423,6 @@
     grid-template-columns: 315px 1fr;
   }
 
-  .footer-title {
-    line-height: 82.5%; /* 129.525px */
-  }
 }
 
 /* TODO: почистить повторяющиеся стили */
