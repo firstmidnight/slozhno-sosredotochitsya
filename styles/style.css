@@ -268,6 +268,10 @@
     padding: 20px;
   }
 
+  .heading-decor {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
+  }
+
   .decorated-zone:not(.footer) {
     margin-bottom: 40px;
   }
@@ -386,6 +390,10 @@
 
 @media (min-width: 1024px) {
   
+  .heading-decor {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
+  }
+
   .header__theme-menu {
     justify-self: center;
     align-self: flex-start;
