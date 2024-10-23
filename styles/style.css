@@ -252,7 +252,7 @@
 }
 
 .footer-title {
-  text-shadow: 2px 2px var(--accent-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 /* Tablet */
