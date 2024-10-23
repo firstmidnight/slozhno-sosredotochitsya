@@ -361,7 +361,7 @@
   }
   
   .decorated-zone::after {
-    inset-block-end: 20px;
+    /* inset-block-end: 20px; */
     inset-inline-start: 20px;
   }
 
