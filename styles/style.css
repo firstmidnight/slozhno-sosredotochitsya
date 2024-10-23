@@ -6,9 +6,10 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  margin: 0 auto;
   background-image: var(--bg-img);
   background-color: var(--main-color);
-  background-position: center;
+  background-position: top center;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -247,6 +248,7 @@
   inline-size: 100%;
   min-block-size: 668px;
   height: 100vh;
+  padding: 10px;
 }
 
 .footer-title {
@@ -354,26 +356,29 @@
     grid-column: 2 / 4;
     grid-row: 3 / 4;
   }
-
+   
   .decorated-zone::before {
     inset-block-start: 20px;
     inset-inline-end: 20px;
   }
   
   .decorated-zone::after {
-    inset-block-end: 25px;
+    inset-block-end: 20px;
     inset-inline-start: 20px;
   }
 
   .rec-text::before {
-    inset-block-start: 20px;
+    inset-block-start: 22px;
     inset-inline-end: 45px;
   }
   
   .rec-text::after {
-    inset-block-start: 28px;
-    inset-inline-end: 28px;
-    
+    inset-inline-end: 30px;
+    inset-block-start: 30px;
+  }
+
+  .footer {
+    padding: 20px;
   }
 }
 
