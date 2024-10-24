@@ -5,7 +5,7 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-image: var(--bg-img);
-  background-position: center;
+  background-position: top center;
   background-size: cover;
   background-attachment: fixed;
   font-family: var(--font-family-main);
@@ -35,7 +35,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 10px;
+  gap: 13px;
 }
 
 .header__theme-menu-button {
