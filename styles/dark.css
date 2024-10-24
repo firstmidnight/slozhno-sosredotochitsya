@@ -24,10 +24,9 @@
   --bg-img: url(../images/cover-image-dark.png);
 }
 
-
 @media (prefers-color-scheme: dark) {
   /* Переопределение переменных для тёмной темы */
- 
+
   :root {
     --font-weight-regular: 400;
     --font-weight-bold: 700;

@@ -13,18 +13,16 @@
   --font-weight-bold: 700;
   --main-heading-decor: #000028;
   --sub-heading-decor: #000028;
-  --accent-color: #FF8DCB;
-  --title-accent: #FFC2E6;
+  --accent-color: #ff8dcb;
+  --title-accent: #ffc2e6;
   --main-text-color: #000028;
   --rec-decor: transparent;
   --element-decor: #000028;
-  --button-hover: rgb(50 49 45 / 0.40);
+  --button-hover: rgb(50 49 45 / 0.4);
   --font-size-main: 18px;
   --font-family-main: 'IBM Plex Mono', monospace;
   --bg-img: url(../images/cover-image-light.png);
 }
-
-
 
 @media (prefers-color-scheme: light) {
   /* Переопределение переменных для светлой темы */
@@ -34,12 +32,12 @@
     --font-weight-bold: 700;
     --main-heading-decor: #000028;
     --sub-heading-decor: #000028;
-    --accent-color: #FF8DCB;
-    --title-accent: #FFC2E6;
+    --accent-color: #ff8dcb;
+    --title-accent: #ffc2e6;
     --main-text-color: #000028;
     --rec-decor: transparent;
     --element-decor: #000028;
-    --button-hover: rgb(50 49 45 / 0.40);
+    --button-hover: rgb(50 49 45 / 0.4);
     --font-size-main: 18px;
     --font-family-main: 'IBM Plex Mono', monospace;
     --bg-img: url(../images/cover-image-light.png);

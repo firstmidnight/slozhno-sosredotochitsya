@@ -1,15 +1,15 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
-
 /* Mobile first */
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  background-color: var(--main-color);
   background-image: var(--bg-img);
-  background-position: top center;
+  background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  font-family: var(--font-family-main);
+  font-size: var(--font-size-main);
 }
 
 .header {
@@ -40,9 +40,7 @@
   position: relative;
   border: none;
   color: var(--main-heading-decor);
-  font-family: var(--font-family-main);
   font-weight: var(--font-weight-regular);
-  font-size: var(--font-size-main);
   font-style: normal;
   line-height: 18px; /* 100% */
   text-align: center;
@@ -78,7 +76,6 @@
 
 .heading-decor {
   color: var(--title-accent);
-  font-family: var(--font-family-main);
   font-weight: var(--font-weight-bold);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-style: normal;
@@ -123,6 +120,7 @@
   font-family: var(--font-family-main);
   font-weight: var(--font-weight-regular);
   font-size: var(--font-size-main);
+  line-height: 25px;
   inset-block-start: 10px;
   inset-inline-end: 38px;
 }
@@ -148,7 +146,6 @@
 
 .title-decor {
   color: var(--sub-heading-decor);
-  font-family: var(--font-family-main);
   font-size: var(--font-size-main);
   line-height: 130%;
   background-color: var(--accent-color);
@@ -156,7 +153,6 @@
 
 .heading {
   color: var(--main-heading-decor);
-  font-family: var(--font-family-main);
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-main);
   line-height: 130%;
@@ -218,10 +214,9 @@
 .section-content {
   margin-block-start: 0;
   margin-block-end: 0;
-  font-family: var(--font-family-main);
   font-weight: var(--font-weight-regular);
   font-size: var(--font-size-main);
-  line-height: 23.4px;
+  line-height: 130%;
 }
 
 .pictures__container {
@@ -383,7 +378,7 @@
 /* Desktop */
 
 @media (min-width: 1024px) {
-
+  
   .heading-decor {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
@@ -420,8 +415,4 @@
   .section_how {
     grid-template-columns: 315px 1fr;
   }
-
 }
-
-
-/* TODO: почистить повторяющиеся стили */
