@@ -22,7 +22,7 @@
 }
 
 .header__title {
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 4px 4px 0 var(--shadow-accent);
   font-weight: var(--font-weight-bold);
   line-height: 82.5%;
 }
@@ -240,7 +240,7 @@
 }
 
 .footer-title {
-  text-shadow: 2px 2px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--shadow-accent);
   line-height: 86.5%;
 }
 
