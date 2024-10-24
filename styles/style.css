@@ -93,6 +93,7 @@
   margin-block-end: 30px;
 }
 
+
 .decorated-zone::before {
   content: '';
   position: absolute;
@@ -233,6 +234,7 @@
   display: grid;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
 }
 
 .footer-title {
