@@ -237,6 +237,7 @@
   justify-content: center;
   align-items: center;
   block-size: 100vh;
+  padding: 0;
 }
 
 
@@ -366,9 +367,9 @@
     inset-block-start: 30px;
   }
 
-  .footer {
+  /* .footer {
     padding: 20px;
-  }
+  } */
 }
 
 /* Desktop */
