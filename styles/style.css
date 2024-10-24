@@ -163,7 +163,7 @@
 .main {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 50px;
   padding: 10px;
 }
 
@@ -246,7 +246,7 @@
 
 @media (min-width: 768px) {
   .main {
-    gap: 60px;
+    gap: 80px;
     padding: 20px;
   }
 
