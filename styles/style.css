@@ -10,9 +10,6 @@
   background-attachment: fixed;
   font-family: var(--font-family-main);
   font-size: var(--font-size-main);
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
 }
 
 .header {
@@ -92,9 +89,9 @@
   padding: 10px;
 }
 
-/* .decorated-zone:not(.footer) {
+.decorated-zone:not(.footer) {
   margin-block-end: 30px;
-} */
+}
 
 .decorated-zone::before {
   content: '';
