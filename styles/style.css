@@ -18,7 +18,7 @@
   grid-template-rows: 1fr min-content 1fr;
   block-size: 100vh;
   min-block-size: 668px;
-  padding: 10px;
+
 }
 
 .header__title {
@@ -86,6 +86,8 @@
 .decorated-zone {
   position: relative;
   block-size: 100vh;
+  padding: 10px;
+
 }
 
 .decorated-zone:not(.footer) {
@@ -99,8 +101,8 @@
   border-right: 1px solid var(--element-decor);
   block-size: 25px;
   inline-size: 25px;
-  inset-inline-end: 0;
-  inset-block-start: 0;
+  inset-inline-end: 10px;
+  inset-block-start: 10px;
 }
 
 .decorated-zone::after {
@@ -110,7 +112,8 @@
   border-left: 1px solid var(--element-decor);
   block-size: 25px;
   inline-size: 25px;
-  inset-block-end: 0;
+  bottom: 10px; 
+  left: 10px;   
 }
 
 .rec-text {
@@ -118,7 +121,8 @@
   display: flex;
   align-items: center;
   color: var(--rec-decor);
-  right: 10px;
+  right: 20px;
+  top: 10px;
   gap: 5px;
 }
 
@@ -230,9 +234,6 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  block-size: 100vh;
-  min-block-size: 668px;
-  padding: 0;
 }
 
 .footer-title {
@@ -257,6 +258,22 @@
 
   .decorated-zone:not(.footer) {
     margin-block-end: 40px;
+  }
+
+  .decorated-zone::before {
+    inset-inline-end: 20px;
+    inset-block-start: 20px;
+  }
+  
+  .decorated-zone::after {
+    bottom: 20px; 
+    left: 20px;   
+  }
+
+  .rec-text {
+    right: 30px;
+    top: 20px;
+    gap: 5px;
   }
 
   .header_subtitle {
