@@ -10,6 +10,7 @@
   background-attachment: fixed;
   font-family: var(--font-family-main);
   font-size: var(--font-size-main);
+  margin: 0 auto;
 }
 
 .header {
@@ -235,6 +236,7 @@
   display: grid;
   justify-content: center;
   align-items: center;
+  block-size: 100vh;
 }
 
 
