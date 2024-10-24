@@ -18,7 +18,6 @@
   grid-template-rows: 1fr min-content 1fr;
   block-size: 100vh;
   min-block-size: 668px;
-
 }
 
 .header__title {
@@ -87,7 +86,6 @@
   position: relative;
   block-size: 100vh;
   padding: 10px;
-
 }
 
 .decorated-zone:not(.footer) {
@@ -112,8 +110,8 @@
   border-left: 1px solid var(--element-decor);
   block-size: 25px;
   inline-size: 25px;
-  bottom: 10px; 
-  left: 10px;   
+  bottom: 10px;
+  left: 10px;
 }
 
 .rec-text {
@@ -264,10 +262,10 @@
     inset-inline-end: 20px;
     inset-block-start: 20px;
   }
-  
+
   .decorated-zone::after {
-    bottom: 20px; 
-    left: 20px;   
+    bottom: 20px;
+    left: 20px;
   }
 
   .rec-text {
@@ -355,6 +353,10 @@
   .img_street {
     grid-column: 2 / 4;
     grid-row: 3 / 4;
+  }
+
+  .footer {
+    padding: 20px 20px 0 20px;
   }
 }
 
