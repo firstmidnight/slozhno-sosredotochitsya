@@ -389,7 +389,7 @@
   }
 
   .section_what {
-    grid-template-columns: repeat(1fr);
+    grid-template-columns: repeat(3,1fr);
     grid-template-rows: auto;
     align-items: start;
   }
