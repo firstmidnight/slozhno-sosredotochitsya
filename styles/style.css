@@ -17,6 +17,8 @@
   grid-template-rows: 1fr min-content 1fr;
   block-size: 100vh;
   min-block-size: 668px;
+  justify-items: end;
+  align-items: center;
 }
 
 .header__title {
@@ -163,13 +165,11 @@
   flex-direction: column;
   gap: 50px;
   padding: 10px;
-  inline-size: 100%;
 }
 
 .section-block {
   display: grid;
   gap: 20px;
-  inline-size: 100%;
 }
 
 .article-heading {
