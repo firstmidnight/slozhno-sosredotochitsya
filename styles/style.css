@@ -11,13 +11,13 @@
   font-family: var(--font-family-main);
   font-size: var(--font-size-main);
   margin: 0 auto;
+  padding: 10px;
 }
 
 .header {
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   block-size: 100vh;
-  padding: 10px;
   min-block-size: 668px;
 }
 
@@ -99,8 +99,8 @@
   border-right: 1px solid var(--element-decor);
   block-size: 25px;
   inline-size: 25px;
-  inset-block-start: 10px;
-  inset-inline-end: 10px;
+  inset-inline-end: 0;
+  inset-block-start: 0;
 }
 
 .decorated-zone::after {
@@ -110,30 +110,24 @@
   border-left: 1px solid var(--element-decor);
   block-size: 25px;
   inline-size: 25px;
-  inset-block-end: 10px;
-  inset-inline-start: 10px;
+  inset-block-end: 0;
 }
 
-.rec-text::before {
-  content: 'REC';
+.rec-text {
   position: absolute;
+  display: flex;
+  align-items: center;
   color: var(--rec-decor);
-  font-family: var(--font-family-main);
-  font-weight: var(--font-weight-regular);
-  font-size: var(--font-size-main);
-  line-height: 25px;
-  inset-block-start: 10px;
-  inset-inline-end: 38px;
+  right: 10px;
+  gap: 5px;
 }
 
 .rec-text::after {
   content: '';
-  position: absolute;
+  display: block;
   border-radius: 50%;
   box-shadow: 0 0 4px 2px var(--rec-decor);
   background-color: var(--rec-decor);
-  inset-block-start: 18px;
-  inset-inline-end: 19px;
   inline-size: 9px;
   block-size: 9px;
 }
@@ -240,7 +234,6 @@
   padding: 0;
 }
 
-
 .footer-title {
   text-shadow: 2px 2px 0 var(--accent-color);
 }
@@ -248,7 +241,6 @@
 /* Tablet */
 
 @media (min-width: 768px) {
-  
   .main {
     gap: 80px;
     padding: 20px;
@@ -346,36 +338,11 @@
     grid-column: 2 / 4;
     grid-row: 3 / 4;
   }
-
-  .decorated-zone::before {
-    inset-block-start: 20px;
-    inset-inline-end: 20px;
-  }
-
-  .decorated-zone::after {
-    inset-block-end: 20px;
-    inset-inline-start: 20px;
-  }
-
-  .rec-text::before {
-    inset-block-start: 22px;
-    inset-inline-end: 45px;
-  }
-
-  .rec-text::after {
-    inset-inline-end: 30px;
-    inset-block-start: 30px;
-  }
-
-  /* .footer {
-    padding: 20px;
-  } */
 }
 
 /* Desktop */
 
 @media (min-width: 1024px) {
-  
   .heading-decor {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
