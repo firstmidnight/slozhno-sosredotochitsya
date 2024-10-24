@@ -224,6 +224,10 @@
   inline-size: 100%;
 }
 
+.gallery-block {
+  margin-bottom: 50px
+}
+
 .gallery-image {
   object-fit: cover;
   object-position: center;
@@ -235,7 +239,6 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  margin-top: 5px;
 }
 
 .footer-title {
