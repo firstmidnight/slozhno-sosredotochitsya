@@ -230,6 +230,10 @@
   inline-size: 100%;
 }
 
+.pictures__container {
+  margin-bottom: 10px;
+}
+
 .footer {
   display: grid;
   justify-content: center;
