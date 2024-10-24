@@ -225,7 +225,7 @@
 }
 
 .gallery-block {
-  margin-bottom: 40px
+  margin-bottom: 35px
 }
 
 .gallery-image {
@@ -330,6 +330,12 @@
     gap: 20px;
     inline-size: 100%;
   }
+
+  
+.gallery-block {
+  margin-bottom: 60px
+}
+
 
   .gallery-image {
     inline-size: 100%;
