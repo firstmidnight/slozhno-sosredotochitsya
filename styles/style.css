@@ -17,7 +17,6 @@
   grid-template-rows: 1fr min-content 1fr;
   block-size: 100vh;
   min-block-size: 668px;
-  justify-items: end;
   align-items: center;
 }
 
