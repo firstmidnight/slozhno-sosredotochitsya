@@ -234,7 +234,7 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  min-block-size: 668px;
+  block-size: 668px;
 }
 
 .footer-title {
@@ -250,7 +250,7 @@
     padding: 20px;
   }
 
-  .header {
+  .decorated-zone {
     padding: 20px 20px 20px 0;
   }
 
@@ -359,10 +359,7 @@
     grid-row: 3 / 4;
   }
 
-  .footer {
-    padding: 20px 20px 0;
-  }
-}
+
 
 /* Desktop */
 
@@ -403,4 +400,6 @@
   .section_how {
     grid-template-columns: 315px 1fr;
   }
+
+}
 }
