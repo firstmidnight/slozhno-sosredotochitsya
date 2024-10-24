@@ -64,8 +64,8 @@
 .header__theme-menu-button:focus-visible::after {
   content: '';
   position: absolute;
-  bottom: 0;
-  left: 0;
+  inset-block-end: 0;
+  inset-inline-start: 0;
   inline-size: 100%;
   block-size: 1px;
   background-color: var(--accent-color);
@@ -107,8 +107,8 @@
   border-left: 1px solid var(--element-decor);
   block-size: 25px;
   inline-size: 25px;
-  bottom: 10px;
-  left: 10px;
+  inset-block-end: 10px;
+  inset-inline-start: 10px;
 }
 
 .rec-text {
@@ -116,8 +116,8 @@
   display: flex;
   align-items: center;
   color: var(--rec-decor);
-  right: 20px;
-  top: 10px;
+  inset-inline-end: 20px;
+  inset-block-start: 10px;
   gap: 5px;
 }
 
@@ -218,7 +218,7 @@
 }
 
 .gallery-block {
-  margin-bottom: 30px;
+  margin-block-end: 30px;
 }
 
 .gallery-image {
@@ -240,6 +240,7 @@
 /* Tablet */
 
 @media (min-width: 768px) {
+ 
   .main {
     gap: 80px;
     padding: 20px;
@@ -263,13 +264,13 @@
   }
 
   .decorated-zone::after {
-    bottom: 20px;
-    left: 20px;
+    inset-block-end: 20px;
+    inset-inline-start: 20px;
   }
 
   .rec-text {
-    right: 30px;
-    top: 20px;
+    inset-inline-end: 30px;
+    inset-block-start: 20px;
     gap: 5px;
   }
 
@@ -279,15 +280,15 @@
 
   .section-content {
     display: grid;
+    grid-template-rows: auto
   }
 
   .section_why {
     grid-template-columns: 236px 1fr;
-    grid-template-rows: auto;
+    /* grid-template-rows: auto; */
   }
 
   .section_why .section-content {
-    grid-template-rows: auto auto;
     grid-column: 2;
   }
 
@@ -297,17 +298,15 @@
 
   .section_how {
     grid-template-columns: 236px 1fr;
-    grid-template-rows: auto;
   }
 
   .section_how .section-content {
-    grid-template-rows: auto auto;
     grid-column: 2;
   }
-
+/* 
   .section_what .section-content {
     grid-template-rows: auto auto;
-  }
+  } */
 
   .gallery-heading {
     margin-block-end: 20px;
@@ -322,7 +321,7 @@
   }
 
   .gallery-block {
-    margin-bottom: 20px;
+    margin-block-end: 20px;
   }
 
   .gallery-image {
@@ -358,13 +357,14 @@
   }
 
   .footer-title {
-    margin-left: 15px;
+    margin-inline-start: 15px;
   }
 }
 
 /* Desktop */
 
 @media (min-width: 1024px) {
+  
   .heading-decor {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
