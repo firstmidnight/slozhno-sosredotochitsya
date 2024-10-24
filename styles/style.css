@@ -34,7 +34,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 13px;
+  gap: 10px;
 }
 
 .header__theme-menu-button {
@@ -234,7 +234,7 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .footer-title {
@@ -390,7 +390,7 @@
   }
 
   .section_what {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(1fr);
     grid-template-rows: auto;
     align-items: start;
   }
