@@ -45,7 +45,6 @@
   inline-size: 70px;
   block-size: 26px;
   appearance: none;
-  padding-inline: 13px;
 }
 
 .header__theme-menu-button_active {
@@ -357,6 +356,10 @@
     grid-column: 2 / 4;
     grid-row: 3 / 4;
   }
+
+  .footer-title {
+    margin-left: 15px;
+  }
 }
 
 /* Desktop */
@@ -369,11 +372,12 @@
   .header__theme-menu {
     justify-self: center;
     align-self: flex-start;
+    margin: 0 0 0 20px;
   }
 
   .header__theme-menu-list {
     flex-direction: row;
-    gap: 0;
+    align-self: flex-start;
   }
 
   .header_subtitle {
