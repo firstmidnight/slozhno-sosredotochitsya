@@ -4,11 +4,7 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  background-image: var(--bg-img);
-  background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background: var(--bg-img) top center / cover no-repeat fixed;
   font-family: var(--font-family-main);
   font-size: var(--font-size-main);
 }
@@ -49,6 +45,7 @@
   inline-size: 70px;
   block-size: 26px;
   appearance: none;
+  padding-inline: 13px;
 }
 
 .header__theme-menu-button_active {
@@ -281,14 +278,16 @@
     inline-size: 364px;
   }
 
-  .section_why {
+  .section-content {
     display: grid;
+  }
+
+  .section_why {
     grid-template-columns: 236px 1fr;
     grid-template-rows: auto;
   }
 
   .section_why .section-content {
-    display: grid;
     grid-template-rows: auto auto;
     grid-column: 2;
   }
@@ -298,19 +297,16 @@
   }
 
   .section_how {
-    display: grid;
     grid-template-columns: 236px 1fr;
     grid-template-rows: auto;
   }
 
   .section_how .section-content {
-    display: grid;
     grid-template-rows: auto auto;
     grid-column: 2;
   }
 
   .section_what .section-content {
-    display: grid;
     grid-template-rows: auto auto;
   }
 
@@ -361,45 +357,46 @@
     grid-column: 2 / 4;
     grid-row: 3 / 4;
   }
+}
 
-  /* Desktop */
+/* Desktop */
 
-  @media (min-width: 1024px) {
-    .heading-decor {
-      font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    }
+@media (min-width: 1024px) {
+  .heading-decor {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
 
-    .header__theme-menu {
-      justify-self: center;
-      align-self: flex-start;
-    }
+  .header__theme-menu {
+    justify-self: center;
+    align-self: flex-start;
+  }
 
-    .header__theme-menu-list {
-      flex-direction: row;
-    }
+  .header__theme-menu-list {
+    flex-direction: row;
+    gap: 0;
+  }
 
-    .header_subtitle {
-      inline-size: 491px;
-    }
+  .header_subtitle {
+    inline-size: 491px;
+  }
 
-    .section_why {
-      grid-template-columns: 315px 1fr;
-      grid-template-rows: auto;
-    }
+  .section_why {
+    grid-template-columns: 315px 1fr;
+    grid-template-rows: auto;
+  }
 
-    .section_what {
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: auto;
-      align-items: start;
-    }
+  .section_what {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    align-items: start;
+  }
 
-    .section_what .heading {
-      grid-column: 1 / -1;
-      max-inline-size: none;
-    }
+  .section_what .heading {
+    grid-column: 1 / -1;
+    max-inline-size: none;
+  }
 
-    .section_how {
-      grid-template-columns: 315px 1fr;
-    }
+  .section_how {
+    grid-template-columns: 315px 1fr;
   }
 }
