@@ -232,17 +232,11 @@
 }
 
 .footer {
-  position: relative;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
-  block-size: 100vh;
-  margin-block-start: 30px;
-  padding: 10px;
-  font-size: var(--font-size-main);
-  inline-size: 100%;
-  min-block-size: 668px;
 }
+
 
 .footer-title {
   text-shadow: 2px 2px 0 var(--accent-color);
