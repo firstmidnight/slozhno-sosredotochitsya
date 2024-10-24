@@ -11,7 +11,6 @@
   font-family: var(--font-family-main);
   font-size: var(--font-size-main);
   margin: 0 auto;
-  padding: 10px;
 }
 
 .header {
@@ -19,6 +18,7 @@
   grid-template-rows: 1fr min-content 1fr;
   block-size: 100vh;
   min-block-size: 668px;
+  padding: 10px;
 }
 
 .header__title {
