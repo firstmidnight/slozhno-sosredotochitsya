@@ -10,7 +10,9 @@
   background-attachment: fixed;
   font-family: var(--font-family-main);
   font-size: var(--font-size-main);
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .header {
@@ -22,6 +24,8 @@
 
 .header__title {
   text-shadow: 4px 4px 0 var(--accent-color);
+  font-weight: var(--font-weight-bold);
+  line-height: 82.5%;
 }
 
 .header__theme-menu {
@@ -88,9 +92,9 @@
   padding: 10px;
 }
 
-.decorated-zone:not(.footer) {
+/* .decorated-zone:not(.footer) {
   margin-block-end: 30px;
-}
+} */
 
 .decorated-zone::before {
   content: '';
@@ -236,6 +240,7 @@
 
 .footer-title {
   text-shadow: 2px 2px 0 var(--accent-color);
+  line-height: 86.5%;
 }
 
 /* Tablet */
