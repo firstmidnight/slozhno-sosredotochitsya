@@ -95,7 +95,6 @@
   margin-block-end: 30px;
 }
 
-
 .decorated-zone::before {
   content: '';
   position: absolute;
@@ -225,7 +224,7 @@
 }
 
 .gallery-block {
-  margin-bottom: 32px
+  margin-bottom: 30px;
 }
 
 .gallery-image {
@@ -233,7 +232,6 @@
   object-position: center;
   inline-size: 100%;
 }
-
 
 .footer {
   display: grid;
@@ -331,11 +329,9 @@
     inline-size: 100%;
   }
 
-  
-.gallery-block {
-  margin-bottom: 60px
-}
-
+  .gallery-block {
+    margin-bottom: 40px;
+  }
 
   .gallery-image {
     inline-size: 100%;
@@ -369,47 +365,44 @@
     grid-row: 3 / 4;
   }
 
+  /* Desktop */
 
+  @media (min-width: 1024px) {
+    .heading-decor {
+      font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    }
 
-/* Desktop */
+    .header__theme-menu {
+      justify-self: center;
+      align-self: flex-start;
+    }
 
-@media (min-width: 1024px) {
-  .heading-decor {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    .header__theme-menu-list {
+      flex-direction: row;
+    }
+
+    .header_subtitle {
+      inline-size: 491px;
+    }
+
+    .section_why {
+      grid-template-columns: 315px 1fr;
+      grid-template-rows: auto;
+    }
+
+    .section_what {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      align-items: start;
+    }
+
+    .section_what .heading {
+      grid-column: 1 / -1;
+      max-inline-size: none;
+    }
+
+    .section_how {
+      grid-template-columns: 315px 1fr;
+    }
   }
-
-  .header__theme-menu {
-    justify-self: center;
-    align-self: flex-start;
-  }
-
-  .header__theme-menu-list {
-    flex-direction: row;
-  }
-
-  .header_subtitle {
-    inline-size: 491px;
-  }
-
-  .section_why {
-    grid-template-columns: 315px 1fr;
-    grid-template-rows: auto;
-  }
-
-  .section_what {
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: auto;
-    align-items: start;
-  }
-
-  .section_what .heading {
-    grid-column: 1 / -1;
-    max-inline-size: none;
-  }
-
-  .section_how {
-    grid-template-columns: 315px 1fr;
-  }
-
-}
 }
