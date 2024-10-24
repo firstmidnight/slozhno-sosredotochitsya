@@ -234,8 +234,6 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  margin-top: 15px;
-  block-size: 100vh;
   min-block-size: 668px;
 }
 
